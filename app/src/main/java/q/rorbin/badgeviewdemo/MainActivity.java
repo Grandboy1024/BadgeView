@@ -3,20 +3,13 @@ package q.rorbin.badgeviewdemo;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
-import android.os.PersistableBundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
-import android.text.SpannableString;
-import android.text.SpannableStringBuilder;
-import android.text.Spanned;
 import android.text.TextUtils;
 import android.text.TextWatcher;
-import android.text.style.ImageSpan;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -119,35 +112,35 @@ public class MainActivity extends AppCompatActivity {
                 }
                 lastRadioButton = buttonView;
                 for (Badge badge : badges) {
-                    switch (buttonView.getId()) {
-                        case R.id.rb_st:
-                            badge.setBadgeGravity(Gravity.START | Gravity.TOP);
-                            break;
-                        case R.id.rb_sb:
-                            badge.setBadgeGravity(Gravity.START | Gravity.BOTTOM);
-                            break;
-                        case R.id.rb_et:
-                            badge.setBadgeGravity(Gravity.END | Gravity.TOP);
-                            break;
-                        case R.id.rb_eb:
-                            badge.setBadgeGravity(Gravity.END | Gravity.BOTTOM);
-                            break;
-                        case R.id.rb_ct:
-                            badge.setBadgeGravity(Gravity.CENTER | Gravity.TOP);
-                            break;
-                        case R.id.rb_ce:
-                            badge.setBadgeGravity(Gravity.CENTER | Gravity.END);
-                            break;
-                        case R.id.rb_cb:
-                            badge.setBadgeGravity(Gravity.CENTER | Gravity.BOTTOM);
-                            break;
-                        case R.id.rb_cs:
-                            badge.setBadgeGravity(Gravity.CENTER | Gravity.START);
-                            break;
-                        case R.id.rb_c:
-                            badge.setBadgeGravity(Gravity.CENTER);
-                            break;
-                    }
+//                    switch (buttonView.getId()) {
+//                        case R.id.rb_st:
+//                            badge.setBadgeGravity(Gravity.START | Gravity.TOP);
+//                            break;
+//                        case R.id.rb_sb:
+//                            badge.setBadgeGravity(Gravity.START | Gravity.BOTTOM);
+//                            break;
+//                        case R.id.rb_et:
+//                            badge.setBadgeGravity(Gravity.END | Gravity.TOP);
+//                            break;
+//                        case R.id.rb_eb:
+//                            badge.setBadgeGravity(Gravity.END | Gravity.BOTTOM);
+//                            break;
+//                        case R.id.rb_ct:
+//                            badge.setBadgeGravity(Gravity.CENTER | Gravity.TOP);
+//                            break;
+//                        case R.id.rb_ce:
+//                            badge.setBadgeGravity(Gravity.CENTER | Gravity.END);
+//                            break;
+//                        case R.id.rb_cb:
+//                            badge.setBadgeGravity(Gravity.CENTER | Gravity.BOTTOM);
+//                            break;
+//                        case R.id.rb_cs:
+//                            badge.setBadgeGravity(Gravity.CENTER | Gravity.START);
+//                            break;
+//                        case R.id.rb_c:
+//                            badge.setBadgeGravity(Gravity.CENTER);
+//                            break;
+//                    }
                 }
             }
         };

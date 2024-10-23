@@ -8,7 +8,7 @@ android {
     compileSdk 34
     defaultConfig {
         applicationId "q.rorbin.badgeviewdemo"
-        minSdk 14
+        minSdk 21
         targetSdk 34
         versionCode 1
         versionName "1.0"
@@ -29,7 +29,8 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:2.0.4'
     testImplementation 'junit:junit:4.13.2'
-
+//    implementation 'com.github.Grandboy1024:BadgeView:v1.5.3'
+//    implementation 'com.grandboy:badgeview:1.5.3'
     //    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
 //        exclude group: 'com.android.support', module: 'support-annotations'
 //    })
