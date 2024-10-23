@@ -25,19 +25,13 @@ android {
 publishing {
     publications {
         mavenJava(MavenPublication) {
-//            from components.java // 如果是 Java/Kotlin 项目
-
             groupId = 'com.grandboy'
             artifactId = 'badgeview'
-            version = '1.5.4'
+            version = '1.6.0'
         }
     }
 }
 
 dependencies {
-//    implementation fileTree(dir: 'libs', include: ['*.jar'])
-//    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-//        exclude group: 'com.android.support', module: 'support-annotations'
-//    })
     testImplementation 'junit:junit:4.13.2'
 }

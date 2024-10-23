@@ -1,3 +1,26 @@
+# 使用方法：
+[![](https://jitpack.io/v/Grandboy1024/BadgeView.svg)](https://jitpack.io/#Grandboy1024/BadgeView)
+
+使用方法
+
+``` settings.gradle
+	dependencyResolutionManagement {
+		repositories {
+      // ...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+``` build.gradle
+	dependencies {
+    // ...
+    implementation 'com.github.Grandboy1024:BadgeView:1.6.0'
+	}
+```
+
+# 以下为废弃内容
+
 # 该项目已废弃停止维护, 请不要再您的生产环境中使用
 
 
