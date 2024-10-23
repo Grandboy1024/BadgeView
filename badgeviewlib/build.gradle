@@ -1,15 +1,15 @@
-apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
+plugins {
+    id('com.android.library')
+    id 'maven-publish'
+}
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '25.0.0'
+    namespace 'q.rorbin.badgeview'
+    compileSdk 34
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        minSdk 14
+        targetSdk 34
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -22,19 +22,22 @@ android {
     }
 }
 
-publish {
-    userOrg = 'qstumn'
-    groupId = 'q.rorbin'
-    artifactId = 'badgeview'
-    publishVersion = '1.1.3'
-    desc = 'android badgeview can drag dismiss like QQ'
-    website = 'https://github.com/qstumn/BadgeView'
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java // 如果是 Java/Kotlin 项目
+
+            groupId = 'com.grandboy'
+            artifactId = 'badgeview'
+            version = '1.5.0'
+        }
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    testCompile 'junit:junit:4.12'
+//    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//    })
+    testImplementation 'junit:junit:4.13.2'
 }
